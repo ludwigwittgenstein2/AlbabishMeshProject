@@ -11,6 +11,7 @@ It supports **STL** and **OBJ** mesh files, renders them into 2D projections, ex
 This application analyzes reconstructed 3D anatomical meshes and produces a structured morphology review.
 
 ### Client-side pipeline
+
 - Loads **STL** or **OBJ** meshes
 - Renders a wireframe 2D projection in the browser
 - Computes:
