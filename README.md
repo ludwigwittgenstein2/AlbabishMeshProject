@@ -126,13 +126,3 @@ AlbabishMeshProject/
 
 
 ---
-
-## 3) Git commands to push to GitHub
-
-From the project root:
-
-```bash
-git status
-git add .
-git commit -m "Add OBJ support, screenshots, and README for medical mesh CV analyzer"
-git push origin main
