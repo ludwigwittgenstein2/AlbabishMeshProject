@@ -1,0 +1,85 @@
+3D MEDICAL MORPHOLOGY REVIEW REPORT
+==================================================
+Generated: 2026-04-23T17:43:06.290Z
+
+1. Study File
+--------------------------------------------------
+Name: 1949_Vein.stl
+Size: 1.02 MB
+Type: application/octet-stream
+
+2. Client-Side Mesh and Image Analysis
+--------------------------------------------------
+STL format: binary
+Vertices: 64,098
+Faces: 21,366
+Canvas size: 512 x 512
+
+2.1 Geometric / Visual Signal Summary
+Edge density: 2.42%
+Foreground ratio: 11.07%
+Harris corner count: 145
+Harris response max: 7257020422.01 | threshold used: 72570204.22
+K-means clusters: 5
+Cluster centers: [[0,179,0],[0,252,0],[0,106,0],[0,29,0],[0,0,0]]
+
+3. Backend Morphology Analysis
+--------------------------------------------------
+Status: OK
+Device: cpu
+
+3.1 Mesh Reconstruction Summary
+Vertices: 10,685
+Faces: 21,366
+Volume: 13063.97
+Surface area: 8073.51
+Watertight: true
+Euler number: 2
+
+3.2 Aggregate Morphology Signal Summary
+Rendered views: 4
+Total features (SIFT/ORB): 676
+Average edge density: 1.08%
+Total contours: 2431
+
+3.3 MedGemma Structured Morphology Review
+Status: ok
+Model: medgemma:latest
+
+Structure overview:
+The image shows a 3D medical segmentation.
+
+Morphological observations:
+The segmentation appears to be relatively smooth, with a regular contour. The structure shows a lobulated surface. The branching architecture is visible, although the details of the branching pattern are not clearly defined.
+
+Potential anatomical significance:
+The structure is likely a vascular structure, given its morphology.
+
+Possible anomalous or abnormal geometric features:
+No obvious anomalies are apparent.
+
+Limitations:
+The resolution of the image is low, making it difficult to assess the fine details of the segmentation.
+
+3.4 LLaVA-Med Supplemental Interpretation
+Status: ok
+
+Detected geometric patterns:
+
+1. The green wireframe in the montage exhibits a consistent pattern of branching and segmentation, which is reminiscent of tree branches.
+2. The anatomical interpretation is that the green wireframe represents a 3D anatomical mesh, possibly resembling a tree branch or a network of blood vessels.
+3. The knowledge basis for this interpretation comes from medical morphology literature, which describes the branching patterns and segmentation found in various anatomical structures, such as trees, blood vessels, and nerve cells.
+4. The limitations and missing data include the lack of specific details about the anatomical structure represented by the green wireframe, which would require additional data to provide a more accurate diagnosis or description.
+
+3.5 Optional Visual Classification (ViT)
+Status: ok
+Predicted class: 920
+Confidence: 0.4271
+Label: traffic light, traffic signal, stoplight
+
+4. Interpretive Caveats
+--------------------------------------------------
+• This report is based on reconstructed STL mesh geometry and rendered views, not raw CT, MRI, PET, ultrasound, or histopathology data.
+• The analysis focuses on external morphology, contour, asymmetry, branching, irregularity, and structural plausibility.
+• Internal tissue composition, radiodensity, enhancement behavior, and microscopic pathology cannot be established from mesh geometry alone.
+• AI-generated statements are intended for supportive morphology review and segmentation-quality interpretation, not diagnostic decision-making.

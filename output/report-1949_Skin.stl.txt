@@ -1,0 +1,90 @@
+3D MEDICAL MORPHOLOGY REVIEW REPORT
+==================================================
+Generated: 2026-04-22T19:57:03.830Z
+
+1. Study File
+--------------------------------------------------
+Name: 1949_Skin.stl
+Size: 0.45 MB
+Type: application/octet-stream
+
+2. Client-Side Mesh and Image Analysis
+--------------------------------------------------
+STL format: binary
+Vertices: 28,230
+Faces: 9,410
+Canvas size: 512 x 512
+
+2.1 Geometric / Visual Signal Summary
+Edge density: 3.58%
+Foreground ratio: 8.47%
+Harris corner count: 243
+Harris response max: 9280748348.71 | threshold used: 92807483.49
+K-means clusters: 5
+Cluster centers: [[0,248,0],[0,178,0],[0,92,0],[0,38,0],[0,0,0]]
+
+3. Backend Morphology Analysis
+--------------------------------------------------
+Status: OK
+Device: cpu
+
+3.1 Mesh Reconstruction Summary
+Vertices: 5,839
+Faces: 9,410
+Volume: 0.00
+Surface area: 89403.91
+Watertight: false
+Euler number: -1
+
+3.2 Aggregate Morphology Signal Summary
+Rendered views: 4
+Total features (SIFT/ORB): 7135
+Average edge density: 7.88%
+Total contours: 13833
+
+3.3 MedGemma Structured Morphology Review
+Status: ok
+Model: medgemma:latest
+
+Structure overview:
+The structure appears to be a segment of the airway, likely the trachea or bronchus.
+
+Morphological observations:
+The overall shape is generally cylindrical, with a relatively smooth contour. The structure exhibits some lobulation, particularly in the proximal region. The branching architecture is evident, with the trachea dividing into two main bronchi. The boundary is continuous.
+
+Potential anatomical significance:
+The structure is anatomically plausible as a segment of the airway.
+
+Possible anomalous or abnormal geometric features:
+No obvious anomalies are apparent.
+
+Limitations:
+The resolution of the mesh limits the ability to assess fine details. The structure is viewed from a single perspective, making it difficult to fully assess its 3D shape.
+
+3.4 LLaVA-Med Supplemental Interpretation
+Status: error
+Message: Model loading failed: Failed to load any LLaVA model. Last error: 
+LlavaForConditionalGeneration requires the PyTorch library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+
+Tried models: ['llava-hf/llava-1.5-7b-hf']
+
+3.5 Optional Visual Classification (ViT)
+Status: error
+Message: 
+AutoImageProcessor requires the PyTorch library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+
+AutoImageProcessor requires the Torchvision library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+
+
+4. Interpretive Caveats
+--------------------------------------------------
+• This report is based on reconstructed STL mesh geometry and rendered views, not raw CT, MRI, PET, ultrasound, or histopathology data.
+• The analysis focuses on external morphology, contour, asymmetry, branching, irregularity, and structural plausibility.
+• Internal tissue composition, radiodensity, enhancement behavior, and microscopic pathology cannot be established from mesh geometry alone.
+• AI-generated statements are intended for supportive morphology review and segmentation-quality interpretation, not diagnostic decision-making.

@@ -1,0 +1,98 @@
+3D MEDICAL MORPHOLOGY REVIEW REPORT
+==================================================
+Generated: 2026-04-23T20:56:43.227Z
+
+1. Study File
+--------------------------------------------------
+Name: 1949_OBJ.obj
+Size: 2.44 MB
+Type: model/obj
+
+2. Client-Side Mesh and Image Analysis
+--------------------------------------------------
+Mesh format: obj
+Vertices: 39,657
+Faces: 77,054
+Canvas size: 512 x 512
+
+2.1 Geometric / Visual Signal Summary
+Edge density: 6.04%
+Foreground ratio: 21.90%
+Harris corner count: 451
+Harris response max: 8716850670.48 | threshold used: 87168506.70
+K-means clusters: 5
+Cluster centers: [[0,182,0],[0,103,0],[0,251,0],[0,39,0],[0,0,0]]
+
+3. Backend Morphology Analysis
+--------------------------------------------------
+Status: OK
+Device: cpu
+
+3.1 Mesh Reconstruction Summary
+Vertices: 39,681
+Faces: 77,054
+Volume: 0.00
+Surface area: 0.22
+Watertight: false
+Euler number: 179
+
+3.2 Aggregate Morphology Signal Summary
+Rendered views: 4
+Total features (SIFT/ORB): 4394
+Average edge density: 6.09%
+Total contours: 16115
+
+3.3 MedGemma Structured Morphology Review
+Status: ok
+Model: medgemma:latest
+
+Structure overview:
+The image shows a 3D anatomical mesh, likely of a lung or a similar organ. The mesh appears to represent a lobular structure with a relatively smooth surface.
+
+Morphological observations:
+The overall shape appears relatively symmetrical. The mesh exhibits lobular structures, suggesting a branching architecture. The surface appears smooth, with no obvious gross irregularities. The mesh is oriented in a standard anatomical orientation.
+
+Potential anatomical significance:
+The mesh represents a lung or a similar organ with lobular structure. The branching architecture suggests a functional structure.
+
+Possible anomalous or abnormal geometric features:
+There are no obvious gross anatomical abnormalities visible in the provided image.
+
+Limitations:
+The image is a 2D rendering of a 3D mesh, which limits the ability to assess subtle anatomical details. It is difficult to determine the exact size and shape of the structure without a 3D visualization tool.
+
+3.4 LLaVA-Med Supplemental Interpretation
+Status: ok
+
+Detected geometric patterns:
+
+1. The green wireframe in the montage exhibits a consistent pattern of branching and segmentation, which is indicative of an anatomical structure.
+2. The patterns showcase a combination of curvature and surface contour, which is typical of bone and cartilage structures.
+
+Anatomical interpretation (tentative):
+
+1. The branching and segmentation patterns suggest that the structure could be a part of a bone or cartilage, possibly a long bone or a joint.
+2. The curvature and surface contour patterns indicate that the structure might be involved in movement or support, such as a bone or a joint.
+
+Knowledge basis:
+
+1. The branching and segmentation patterns are commonly observed in bones and cartilage structures.
+2. The curvature and surface contour patterns are characteristic of bone and cartilage structures, which are essential for supporting body weight, facilitating movement, and providing protection to internal organs.
+
+Limitations and missing data:
+
+1. The specific type of bone or cartilage structure cannot be determined with certainty from the montage alone.
+2. Additional data, such as the size, shape, and orientation of the structure, would be necessary to provide a more accurate anatomical interpretation.
+
+3.5 Optional Visual Classification (ViT)
+Status: ok
+Predicted class: 920
+Confidence: 0.1216
+Label: traffic light, traffic signal, stoplight
+
+4. Interpretive Caveats
+--------------------------------------------------
+• This report is based on reconstructed mesh geometry and rendered views, not raw CT, MRI, PET, ultrasound, or histopathology data.
+• The analysis focuses on external morphology, contour, asymmetry, branching, irregularity, and structural plausibility.
+• Internal tissue composition, radiodensity, enhancement behavior, and microscopic pathology cannot be established from surface mesh geometry alone.
+• AI-generated statements are intended for supportive morphology review and segmentation-quality interpretation, not diagnostic decision-making.

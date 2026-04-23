@@ -1,0 +1,87 @@
+3D MEDICAL MORPHOLOGY REVIEW REPORT
+==================================================
+Generated: 2026-04-22T20:05:13.335Z
+
+1. Study File
+--------------------------------------------------
+Name: 1949_Artery.stl
+Size: 0.68 MB
+Type: application/octet-stream
+
+2. Client-Side Mesh and Image Analysis
+--------------------------------------------------
+STL format: binary
+Vertices: 42,792
+Faces: 14,264
+Canvas size: 512 x 512
+
+2.1 Geometric / Visual Signal Summary
+Edge density: 4.31%
+Foreground ratio: 13.17%
+Harris corner count: 352
+Harris response max: 8467209039.30 | threshold used: 84672090.39
+K-means clusters: 5
+Cluster centers: [[0,250,0],[0,174,0],[0,99,0],[0,30,0],[0,0,0]]
+
+3. Backend Morphology Analysis
+--------------------------------------------------
+Status: OK
+Device: cpu
+
+3.1 Mesh Reconstruction Summary
+Vertices: 7,132
+Faces: 14,264
+Volume: 7548.89
+Surface area: 6201.93
+Watertight: true
+Euler number: 0
+
+3.2 Aggregate Morphology Signal Summary
+Rendered views: 4
+Total features (SIFT/ORB): 861
+Average edge density: 1.42%
+Total contours: 3610
+
+3.3 MedGemma Structured Morphology Review
+Status: ok
+Model: medgemma:latest
+
+Structure overview:
+The provided image shows a 3D anatomical mesh. It appears to be a cross-sectional view, likely of a vascular structure. The overall shape and orientation are visible, but the specific anatomical location is not clear.
+
+Morphological observations:
+The structure exhibits a relatively regular contour, with no obvious lobulation or significant surface irregularities. The branching architecture is visible, though the level of detail is limited by the resolution of the mesh.
+
+Potential anatomical significance:
+The structure is likely a vessel, possibly an artery or vein.
+
+Possible anomalous or abnormal geometric features:
+No obvious anomalies are immediately apparent. Further analysis with higher resolution data would be required to rule out subtle distortions.
+
+Limitations:
+The image is a 2D rendering of a 3D mesh, which limits the ability to assess the full anatomical context and subtle geometric features.
+
+3.4 LLaVA-Med Supplemental Interpretation
+Status: ok
+
+Detected geometric patterns:
+
+1. The green wireframe in the montage exhibits a consistent curvature and branching pattern, which is reminiscent of the vascular system.
+2. The anatomical interpretation is that the green wireframe represents a network of blood vessels, such as arteries, veins, and capillaries.
+3. The knowledge basis for this interpretation comes from medical morphology literature, which describes the structure and function of blood vessels.
+4. Limitations and missing data:
+	* Further information about the specific type of anatomical mesh (e.g., brain, heart, or peripheral vessels) would improve the analysis.
+	* The exact scale of the montage and the size of the blood vessels cannot be determined confidently from the image alone.
+
+3.5 Optional Visual Classification (ViT)
+Status: ok
+Predicted class: 409
+Confidence: 0.7900
+Label: analog clock
+
+4. Interpretive Caveats
+--------------------------------------------------
+• This report is based on reconstructed STL mesh geometry and rendered views, not raw CT, MRI, PET, ultrasound, or histopathology data.
+• The analysis focuses on external morphology, contour, asymmetry, branching, irregularity, and structural plausibility.
+• Internal tissue composition, radiodensity, enhancement behavior, and microscopic pathology cannot be established from mesh geometry alone.
+• AI-generated statements are intended for supportive morphology review and segmentation-quality interpretation, not diagnostic decision-making.

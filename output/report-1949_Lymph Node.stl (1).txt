@@ -1,0 +1,86 @@
+MEDICAL MESH CV ANALYSIS REPORT
+====================================
+Generated: 2026-04-22T19:02:24.873Z
+
+1) FILE
+------------------------------------
+Name: 1949_Lymph Node.stl
+Size: 0.12 MB
+Type: application/octet-stream
+
+2) CLIENT-SIDE PIPELINE (Browser)
+------------------------------------
+STL Format: binary
+Vertices: 7,398
+Faces: 2,466
+
+2.1 Rendering
+Canvas size: 512 x 512
+
+2.2 Edge Detection
+Sobel threshold: 70
+Edge density: 8.99%
+
+2.3 Corner/Feature Detection
+Harris corners: 607
+Harris Rmax: 11149044399.69 | thresholdUsed: 111490444.00
+
+2.4 Segmentation
+Foreground ratio: 12.31%
+K-means clusters: 5 | Centers: [[0,171,0],[0,93,0],[0,38,0],[0,246,0],[0,0,0]]
+
+3) BACKEND PIPELINE (Flask)
+------------------------------------
+Status: OK
+Device: cpu
+
+3.1 Mesh Geometry
+Vertices: 1,249
+Faces: 2,466
+Volume: 2789.56
+Surface area: 2068.83
+Watertight: true
+
+3.2 Multi-View Summary
+Views: 4
+Total features (SIFT/ORB): 1709
+Avg edge density: 2.47%
+Total contours: 5012
+
+3.3 Vision Transformer (ViT)
+Status: skipped
+
+3.4 LLaVA-Med (Medical VLM)
+Status: skipped
+
+3.5 MedGemma (Ollama)
+Status: ok
+Model: medgemma:latest
+
+Findings:
+Based on the rendered anatomical 3D mesh view, here's a description of the visible shape, symmetry, branching, curvature, and potential anatomy-oriented hypotheses:
+
+**Shape:** The mesh depicts a roughly circular shape, potentially representing a cross-section or a specific anatomical region. The shape is not perfectly symmetrical.
+
+**Symmetry:** The shape exhibits asymmetry. One side appears to be slightly larger or more complex than the other.
+
+**Branching:** The mesh shows branching structures, possibly representing a branching vascular network or similar anatomical structures. The branching appears irregular and not perfectly symmetrical.
+
+**Curvature:** The mesh demonstrates curvature in various areas, indicating anatomical structures with varying degrees of bending or concavity.
+
+**Anatomy-Oriented Hypotheses:**
+
+*   **Cross-Section:** The shape and branching could suggest a cross-section of a biological structure, potentially related to the circulatory system, respiratory system, or nervous system.
+*   **Organ/Tissue:** The overall shape and branching pattern could represent a particular organ or tissue, such as a lung, kidney, or a specific type of blood vessel.
+*   **Developmental Stage:** The asymmetry and branching patterns could reflect different stages of development, such as early embryonic development or tissue remodeling.
+*   **Disease/Anomaly:** The shape and branching abnormalities could indicate a disease or anatomical anomaly.
+
+**Uncertainty and Disclaimer:**
+
+It is important to emphasize that this is only a visual interpretation of a rendered mesh. Without more context about the source of the data, the specific anatomical region being represented, or the purpose of the rendering, it is impossible to make definitive anatomical conclusions. This analysis is based solely on the visual information provided. Therefore, any hypotheses are speculative and should be considered tentative. There are no diagnoses or conclusions about a specific anatomical condition.
+
+4) NOTES
+------------------------------------
+• Client-side analysis is performed on a 2D wireframe projection (green mesh lines on black background).
+• Backend segmentation/contours/features reflect rendered 2D views, not raw clinical imaging modalities.
+• For true medical CV, integrate CT/MRI slices or textured mesh data.

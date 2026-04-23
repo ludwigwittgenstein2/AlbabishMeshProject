@@ -1,0 +1,86 @@
+3D MEDICAL MORPHOLOGY REVIEW REPORT
+==================================================
+Generated: 2026-04-22T19:53:06.995Z
+
+1. Study File
+--------------------------------------------------
+Name: 1949_Vein.stl
+Size: 1.02 MB
+Type: application/octet-stream
+
+2. Client-Side Mesh and Image Analysis
+--------------------------------------------------
+STL format: binary
+Vertices: 64,098
+Faces: 21,366
+Canvas size: 512 x 512
+
+2.1 Geometric / Visual Signal Summary
+Edge density: 2.42%
+Foreground ratio: 11.07%
+Harris corner count: 145
+Harris response max: 7257020422.01 | threshold used: 72570204.22
+K-means clusters: 5
+Cluster centers: [[0,252,0],[0,172,0],[0,97,0],[0,28,0],[0,0,0]]
+
+3. Backend Morphology Analysis
+--------------------------------------------------
+Status: OK
+Device: cpu
+
+3.1 Mesh Reconstruction Summary
+Vertices: 10,685
+Faces: 21,366
+Volume: 13063.97
+Surface area: 8073.51
+Watertight: true
+Euler number: 2
+
+3.2 Aggregate Morphology Signal Summary
+Rendered views: 4
+Total features (SIFT/ORB): 676
+Average edge density: 1.08%
+Total contours: 2431
+
+3.3 MedGemma Structured Morphology Review
+Status: ok
+Model: medgemma:latest
+
+Structure overview:
+The image shows a 3D anatomical mesh.
+
+Morphological observations:
+The structure appears to be a complex, branching network of interconnected elements. The overall shape is irregular, with lobulations and variations in size along the structure. The surface is relatively smooth, with some minor irregularities. The branching architecture is complex, with multiple levels of branching and anastomosis.
+
+Potential anatomical significance:
+The structure could represent a complex vascular network, a neural network, or another complex anatomical structure. The branching architecture suggests a network-like structure.
+
+Possible anomalous or abnormal geometric features:
+There are no obvious gross anomalies in the mesh geometry. However, subtle irregularities in the surface or branching pattern could be indicative of structural abnormalities. Further analysis with higher resolution or more detailed segmentation is required to assess these possibilities.
+
+Limitations:
+The image is a 2D rendering of a 3D mesh. It is difficult to assess the true 3D shape and surface characteristics. The resolution of the mesh is not specified. The image does not provide information about the material properties of the structure.
+
+3.4 LLaVA-Med Supplemental Interpretation
+Status: error
+Message: Model loading failed: Failed to load any LLaVA model. Last error: Can't load image processor for 'liuhaotian/llava-v1.5-7b'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'liuhaotian/llava-v1.5-7b' is the correct path to a directory containing a preprocessor_config.json file
+Tried models: ['llava-hf/llava-1.5-7b-hf', 'llava-hf/llava-v1.6-mistral-7b-hf', 'liuhaotian/llava-v1.5-7b']
+
+3.5 Optional Visual Classification (ViT)
+Status: error
+Message: 
+AutoImageProcessor requires the PyTorch library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+
+AutoImageProcessor requires the Torchvision library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.
+
+
+4. Interpretive Caveats
+--------------------------------------------------
+• This report is based on reconstructed STL mesh geometry and rendered views, not raw CT, MRI, PET, ultrasound, or histopathology data.
+• The analysis focuses on external morphology, contour, asymmetry, branching, irregularity, and structural plausibility.
+• Internal tissue composition, radiodensity, enhancement behavior, and microscopic pathology cannot be established from mesh geometry alone.
+• AI-generated statements are intended for supportive morphology review and segmentation-quality interpretation, not diagnostic decision-making.

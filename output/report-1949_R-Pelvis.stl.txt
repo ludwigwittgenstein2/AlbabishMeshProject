@@ -1,0 +1,80 @@
+3D MEDICAL MORPHOLOGY REVIEW REPORT
+==================================================
+Generated: 2026-04-22T19:40:46.989Z
+
+1. Study File
+--------------------------------------------------
+Name: 1949_R-Pelvis.stl
+Size: 0.68 MB
+Type: application/octet-stream
+
+2. Client-Side Mesh and Image Analysis
+--------------------------------------------------
+STL format: binary
+Vertices: 42,492
+Faces: 14,164
+Canvas size: 512 x 512
+
+2.1 Geometric / Visual Signal Summary
+Edge density: 13.68%
+Foreground ratio: 26.90%
+Harris corner count: 1,011
+Harris response max: 9564877280.19 | threshold used: 95648772.80
+K-means clusters: 5
+Cluster centers: [[0,177,0],[0,248,0],[0,100,0],[0,39,0],[0,0,0]]
+
+3. Backend Morphology Analysis
+--------------------------------------------------
+Status: OK
+Device: cpu
+
+3.1 Mesh Reconstruction Summary
+Vertices: 7,082
+Faces: 14,164
+Volume: 271076.28
+Surface area: 55273.13
+Watertight: true
+Euler number: 0
+
+3.2 Aggregate Morphology Signal Summary
+Rendered views: 4
+Total features (SIFT/ORB): 4493
+Average edge density: 6.78%
+Total contours: 18540
+
+3.3 MedGemma Structured Morphology Review
+Status: ok
+Model: medgemma:latest
+
+Structure overview:
+The image shows a 3D anatomical mesh.
+
+Morphological observations:
+The structure appears to be a lung. The overall shape is relatively symmetrical, although there may be some subtle variations in lobulation. The contour is generally smooth, with no obvious focal bulging or indentation. The branching architecture of the airways is visible.
+
+Potential anatomical significance:
+The structure is likely a lung, which is essential for respiration.
+
+Possible anomalous or abnormal geometric features:
+There are no obvious anomalies apparent in the mesh.
+
+Limitations:
+The image is a 2D rendering of a 3D structure. It is difficult to assess subtle anatomical details from a 2D projection.
+
+3.4 LLaVA-Med Supplemental Interpretation
+Status: error
+Message: Model loading failed: Failed to load any LLaVA model. Last error: cannot import name 'LlavaForConditionalGeneration' from 'transformers' (/opt/anaconda3/envs/albabish311/lib/python3.11/site-packages/transformers/__init__.py)
+Tried models: ['llava-hf/llava-1.5-7b-hf', 'llava-hf/llava-v1.6-mistral-7b-hf', 'liuhaotian/llava-v1.5-7b']
+
+3.5 Optional Visual Classification (ViT)
+Status: ok
+Predicted class: 111
+Confidence: 0.1561
+Label: nematode, nematode worm, roundworm
+
+4. Interpretive Caveats
+--------------------------------------------------
+• This report is based on reconstructed STL mesh geometry and rendered views, not raw CT, MRI, PET, ultrasound, or histopathology data.
+• The analysis focuses on external morphology, contour, asymmetry, branching, irregularity, and structural plausibility.
+• Internal tissue composition, radiodensity, enhancement behavior, and microscopic pathology cannot be established from mesh geometry alone.
+• AI-generated statements are intended for supportive morphology review and segmentation-quality interpretation, not diagnostic decision-making.
